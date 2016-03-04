@@ -26,7 +26,8 @@ return [
 	|
 	*/
 
-	'default' => 'mysql',
+	// 'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -66,13 +67,13 @@ return [
 
 		'pgsql' => [
 			'driver'   => 'pgsql',
-			'host'     => env('DB_HOST', 'localhost'),
-			'database' => env('DB_DATABASE', 'forge'),
-			'username' => env('DB_USERNAME', 'forge'),
-			'password' => env('DB_PASSWORD', ''),
-			'charset'  => 'utf8',
-			'prefix'   => '',
-			'schema'   => 'public',
+		    'host'     => parse_url(getenv("DATABASE_URL"))["host"],
+		    'database' => substr(parse_url(getenv("DATABASE_URL"))["path"], 1),
+		    'username' => parse_url(getenv("DATABASE_URL"))["user"],
+		    'password' => parse_url(getenv("DATABASE_URL"))["pass"],
+		    'charset'  => 'utf8',
+		    'prefix'   => '',
+		    'schema'   => 'public',
 		],
 
 		'sqlsrv' => [
