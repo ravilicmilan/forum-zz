@@ -72,7 +72,7 @@
 
 @section('scripts')
 
-<script src="{{ asset('/ckeditor/ckeditor_basic.js') }}"></script>
+<script src="/ckeditor/ckeditor_basic.js"></script>
 
 <script>
 	$(function() {

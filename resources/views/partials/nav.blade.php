@@ -15,6 +15,7 @@
 					<li><a href="/auth/login">Login</a></li>
 					<li><a href="/auth/register">Register</a></li>
 				@else
+					<li><a  href="/topics/create">Add New Topic</a></li>
 					@if (Auth::user()->admin == 1)
 						<li><a href="/backend/dashboard">Dashboard</a></li>
 					@endif			
