@@ -1,0 +1,30 @@
+.footer {
+  padding: 60px 0;
+  margin-top: 50px;
+}
+ul {
+  list-style: none;
+}
+.user-pic {
+	max-width: 64px !important;
+}
+.back-btn {
+	margin-top: 30px;
+}
+#search-form {
+	display: inline;
+	width: 300px;
+}
+.thumbnail  {
+	max-width: 100px !important;
+}
+#categories-table .categories-slug-td {
+	width: 65%;
+}
+#categories-table .categories-count-td {
+	width: 10%;
+	text-align: right;
+}
+#categories-table .categories-last-td {
+	width: 25%;
+}
